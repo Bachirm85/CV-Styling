@@ -1,0 +1,135 @@
+header {
+    background-color: gray;
+    padding-left: 150px;
+}
+
+header div {
+    display: flex;
+
+}
+
+hgroup {
+    color: red;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#contact h3 {
+    display: none;
+}
+
+#contact{
+    position: absolute;
+    top: 15px; 
+    right:0px;
+   
+}
+.contact-type{
+    background-color: red;
+    width:110px;
+    color: white;
+}
+
+.contact-value{
+    background-color: black;
+    width:530px;
+    margin:0;
+    padding: 3px; 
+}
+
+.contact{
+    display: flex;
+    margin:0;
+    justify-content: flex-end;
+}
+
+h3::before {
+    content: "tec";
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-left: 30px;
+    color: transparent;
+}
+
+h3 {
+    border-bottom-style: solid;
+    padding-bottom: 0.5em;
+}
+
+h4 {
+    color: red;
+}
+
+.experience-details {
+    opacity: 0.5;
+}
+
+.skill{
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
+    color: white;
+  }
+.skills .skill{
+    /*background: rgb(204, 204, 204);*/
+    margin: 5px;
+    padding: 5px;
+  }
+
+.skills.skills-primary .skill:first-child span{
+    background-color: rgb( 252, 29, 0);
+    display: inline-block;
+    width: 50%;
+    }
+.skills.skills-primary .skill:nth-child(2) span{
+    background-color: rgb( 252, 29, 0);
+    display: inline-block;
+    width: 30%;
+    }
+.skills.skills-primary .skill:nth-child(3) span{
+    background-color: rgb( 252, 29, 0);
+    display: inline-block;
+    width: 10%;
+    }
+.skills.skills-secondary .skill:first-child span{
+    background-color: rgb( 252, 29, 0);
+    display: inline-block;
+    width: 90%;
+    }
+  
+.skills.skills-secondary .skill:nth-child(2) span{
+    background-color: rgb( 252, 29, 0);
+    display: inline-block;
+    width: 60%;
+    }
+
+.skills.skills-secondary .skill:nth-child(3) span{
+    background-color: rgb(252, 29, 0);
+    display: inline-block;
+    width: 80%;
+    }
+.skills.skills-secondary .skill{
+    opacity: 65%;
+    }
+    
+.skills-primary::before{
+    content: "Main"
+  }
+  
+  .skills-secondary::before{
+    content: "Other";
+  }
