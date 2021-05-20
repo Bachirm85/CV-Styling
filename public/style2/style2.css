@@ -1,0 +1,19 @@
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+hgroup h2{
+    display:none;
+}
+#about h3{
+    display:none;
+}
+#contact{
+    display:none;
+}
+
+.experience-institution{
+    display: none
+}
