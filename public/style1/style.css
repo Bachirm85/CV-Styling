@@ -1,6 +1,13 @@
+@media (max-width:480px) {
+    body{
+      max-width:400px;
+     }
+  }
+
 header {
     background-color: gray;
     padding-left: 150px;
+    width: 100%;
 }
 
 header div {
@@ -8,14 +15,37 @@ header div {
 
 }
 
+@media (max-width: 480px) {
+    header {
+        max-width: 480px;
+        height: 300px;
+    }
+}
+
 hgroup {
     color: red;
 }
+@media (max-width:480px) {
+  
+    hgroup {
+      padding-left: 25px;
+      padding-top: 25px;
+      min-width: 200px;
+    }
+}
 
-figure {
+figure img {
     display: flex;
     flex-direction: row;
 }
+
+/*@media (max-width: 480px) {
+    figure img {
+        grid-template-columns: 1fr;
+        margin-left:4px;
+        margin-right: 70%; 
+    }
+} */
 
 .content {
     display: grid;
@@ -23,6 +53,15 @@ figure {
     margin-left: 10%;
     margin-right: 10%;
 }
+@media (max-width:480px) {
+    .content{
+      grid-template-columns: 1fr;
+      margin-left:4px;
+      margin-right: 70%;
+      
+    }
+    
+  }
 
 #contact h3 {
     display: none;
@@ -34,6 +73,19 @@ figure {
     right:0px;
    
 }
+
+@media (max-width:480px) {
+    #contact{
+      position: initial;
+    }
+  }
+
+@media (max-width:480px) {
+  
+    .contacts .contact-value {
+    background-color: white;  
+    }
+  }
 .contact-type{
     background-color: red;
     width:110px;
