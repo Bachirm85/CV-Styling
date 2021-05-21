@@ -165,3 +165,33 @@ figure img {
     color: #117c7c;
 }
 
+#education {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 50% 50%;
+    max-height: 450px;
+}
+
+#education h3 {
+    border-right: 1px solid #c2c1c1;
+    height: 25rem;
+    margin-right: 30px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+h3 {
+    font-style: italic
+}
+
+#hobbies {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+#hobbies h3 {
+    border-right: 1px solid #c2c1c1;
+    height: 5rem;
+    margin-right: 30px;
+    text-align: center;
+}
