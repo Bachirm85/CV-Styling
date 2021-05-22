@@ -2,13 +2,27 @@ body{
     padding: 3% 10%;
 }
 
-hgroup h2{
+.contact-type {
+    display: none;
+}
+
+.contact-value {
+    display: none;
+}
+
+#contact h3 {
+    display: none;
+}
+
+.contact-skype {
+  display: none;
+}
+
+hgroup h2 {
     display:none;
 }
-#about h3{
-    display:none;
-}
-#contact{
+
+#about h3 {
     display:none;
 }
 
@@ -54,14 +68,11 @@ figure img {
     grid-row-start: 1;
     grid-row-end: 1;
     text-align: right;
-
 }
 
 .skills-primary , .skills-secondary {
     display: flex;
     align-items: center;
-    
-   
 }
 
 .skills.skills-primary .skill {
@@ -69,8 +80,7 @@ figure img {
     width: 125px;
     line-height: 30px; 
     margin-right: 10px;
-    color: #ffffff;
-      
+    color: #ffffff;      
 }
 
 .skills.skills-secondary .skill {
@@ -194,4 +204,57 @@ h3 {
     height: 5rem;
     margin-right: 30px;
     text-align: center;
+}
+
+.contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.contact-email {
+    content: "";
+    background: url(../images/email.png) no-repeat 6px center;
+    background-size: 65px 65px;
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-position-x: 20px;
+    margin-right: 0;
+}
+
+.contact-phone {
+    content: "";
+    background: url(../images/phone.png) no-repeat 6px center;
+    background-size: 60px 60px;
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-position-x: 20px;
+    margin-right: 0;
+}
+
+.contact-github {
+    content: "";
+    background: url(../images/github.png) no-repeat 6px center;
+    background-size: 60px 60px;
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-position-x: 20px;
+    margin-right: 0;
+}
+
+.contact-facebook {
+    content: "";
+    background: url(../images/facebook.png) no-repeat 6px center;
+    background-size: 60px 60px;
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-position-x: 20px;
+    margin-right: 0;
 }
