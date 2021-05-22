@@ -1,6 +1,11 @@
 body{
     padding: 3% 10%;
 }
+@media (max-width:480px) {
+    body {
+      max-width:480px;
+     }
+}
 
 .contact-type {
     display: none;
@@ -45,6 +50,12 @@ figure img {
     transform: rotate(-15deg);
 }
 
+@media (max-width: 480px) {
+    figure img {
+        display: none;
+    }
+}
+
 #about {
     width: 75%;
     opacity: 0.5;
@@ -53,11 +64,26 @@ figure img {
     margin-bottom: 100px;
 }
 
+@media (max-width: 480px) {
+    #about {
+        width: 100%;
+        text-align: justify;
+    }
+}
+
 #competencies {
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
     max-height: 110px;
+}
+
+@media (max-width: 480px) {
+    #competencies {
+        display: contents;
+        border-bottom: 1px solid gray;
+        text-align: start;
+    }
 }
 
 #competencies h3 {
@@ -70,7 +96,17 @@ figure img {
     text-align: right;
 }
 
-.skills-primary , .skills-secondary {
+@media (max-width: 480px) {
+    #competencies h3 {
+        border-bottom: 1px solid gray;
+        border-right: none;
+        text-align: start;
+        height: 2rem;
+        margin: 0 250px 25px 0;
+    }
+}
+
+.skills-primary, .skills-secondary {
     display: flex;
     align-items: center;
 }
@@ -147,6 +183,14 @@ figure img {
     margin-top: 100px;
 }
 
+@media (max-width: 480px) {
+    #experiences {
+        display: contents;
+        border-bottom: 1px solid gray;
+        text-align: start;
+    }
+}
+
 .experience {
     grid-column-start: 2;
     margin-bottom: 50px;
@@ -158,6 +202,16 @@ figure img {
     margin-right:30px;
     text-align: center;
     margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+    #experiences h3 {
+        border-bottom: 1px solid gray;
+        border-right: none;
+        text-align: start;
+        height: 2rem;
+        margin: 25px 250px 0 0;
+    }
 }
 
 .experience-type {
@@ -182,12 +236,30 @@ figure img {
     max-height: 450px;
 }
 
+@media (max-width: 480px) {
+    #education {
+        display: contents;
+        border-bottom: 1px solid gray;
+        text-align: start;
+    }
+}
+
 #education h3 {
     border-right: 1px solid #c2c1c1;
     height: 25rem;
     margin-right: 30px;
     text-align: center;
     margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+    #education h3 {
+        border-bottom: 1px solid gray;
+        border-right: none;
+        text-align: start;
+        height: 2rem;
+        margin: 0 250px 0 0;
+    }
 }
 
 h3 {
@@ -199,11 +271,29 @@ h3 {
     grid-template-columns: 25% 75%;
 }
 
+@media (max-width: 480px) {
+    #hobbies {
+        display: contents;
+        border-bottom: 1px solid gray;
+        text-align: start;
+    }
+}
+
 #hobbies h3 {
     border-right: 1px solid #c2c1c1;
     height: 5rem;
     margin-right: 30px;
     text-align: center;
+}
+
+@media (max-width: 480px) {
+    #hobbies h3 {
+        border-bottom: 1px solid gray;
+        border-right: none;
+        text-align: start;
+        height: 2rem;
+        margin: 0 300px 0 0;
+    }
 }
 
 .contacts {
@@ -213,6 +303,12 @@ h3 {
     flex-direction: row;
     padding-left: 200px;
     padding-right: 100px;
+}
+
+@media (max-width: 480px) {
+    .contacts {
+        padding: 0;
+    }
 }
 
 .contact-email {
